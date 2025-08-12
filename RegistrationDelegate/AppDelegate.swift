@@ -17,16 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         
-        let delegateNavigationController = UINavigationController(rootViewController: ProfileViewController())
-        delegateNavigationController.tabBarItem = UITabBarItem(title: "Delegate", image: UIImage(systemName: "paperplane"), selectedImage: UIImage(systemName:"paperplane.fill"))
+        let navigationController = UINavigationController(rootViewController: ProfileViewController())
         
-        let completionNavigationController = UINavigationController(rootViewController: ProfileViewController2())
-        completionNavigationController.tabBarItem = UITabBarItem(title: "Completion", image: UIImage(systemName: "link"), selectedImage: UIImage(systemName:"link"))
-        
-        let tabBar = UITabBarController()
-        tabBar.viewControllers = [delegateNavigationController, completionNavigationController]
-        
-        window?.rootViewController = tabBar
+        window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
         return true
     }
