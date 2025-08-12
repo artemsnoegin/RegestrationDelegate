@@ -18,7 +18,7 @@ class ProfileViewController: UIViewController, SaveUserDataDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-        title = "User Profile"
+        title = "Delegate"
         
         let stackView = UIStackView()
         stackView.axis = .vertical

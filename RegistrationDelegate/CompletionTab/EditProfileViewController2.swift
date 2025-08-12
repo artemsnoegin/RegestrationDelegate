@@ -23,7 +23,7 @@ class EditProfileViewController2: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-        title = "Edit Page"
+        title = "Completion"
         
         let stackView = UIStackView()
         stackView.axis = .vertical
