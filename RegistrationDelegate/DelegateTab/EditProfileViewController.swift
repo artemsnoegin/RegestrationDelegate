@@ -122,12 +122,6 @@ class EditProfileViewController: UIViewController {
         }
     }
     
-    @objc private func phoneNumberFormatting() {
-        if userPhoneNumberField.hasText == false {
-            userPhoneNumberField.text = "+"
-        }
-    }
-    
     private func numberValidation(_ number: String) -> Bool {
         let filteredNumber = number.filter { "1234567890+".contains($0) }
         
@@ -135,6 +129,12 @@ class EditProfileViewController: UIViewController {
             return true
         } else {
             return false
+        }
+    }
+    
+    @objc private func phoneNumberFormatting() {
+        if userPhoneNumberField.hasText == false {
+            userPhoneNumberField.text = "+"
         }
     }
 }
